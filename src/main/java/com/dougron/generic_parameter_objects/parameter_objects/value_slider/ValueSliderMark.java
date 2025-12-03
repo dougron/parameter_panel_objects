@@ -6,7 +6,7 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class ValueSliderMark {
-	private int value;
+	private double value;
 	private String label;
 
 }
