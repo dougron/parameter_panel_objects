@@ -11,19 +11,19 @@ import lombok.Singular;
 
 @Data
 @Builder
-public class ListOfDropDownMenus implements ParameterObject<List<String>>{
-	
+public class ListOfListOfDropDownMenus implements ParameterObject<List<List<String>>>{
+
 	private String id;
 	private String parameter;
-	
-	private final String type = "list_of_drop_downs";
-	
+
+	private final String type = "list_of_list_of_drop_downs";
+
 	@JsonProperty("initial_value")
-	private List<String> initialValue;
-	
-	
+	private List<List<String>> initialValue;
+
+
 	private List<String> options;
-	
+
 	private String name;
 
 	private String width;
